@@ -7,6 +7,7 @@ export const resume = {
   links: [
     { label: 'linkedin.com/in/prabhat-ranjan-jha', href: 'https://www.linkedin.com/in/prabhat-ranjan-jha/' },
     { label: 'github.com/PrabhatRanjanJha', href: 'https://github.com/PrabhatRanjanJha' },
+    { label: 'prabhat-portfolio-plum.vercel.app', href: 'https://prabhat-portfolio-plum.vercel.app/' },
   ],
   education: [
     { what: 'Scaler School of Technology', detail: 'B.Tech, Computer Science', when: '2025 – 2029' },
@@ -47,7 +48,7 @@ export const resume = {
     },
     {
       what: 'Nexora',
-      tag: 'Full-Stack E-Commerce Platform (in progress)',
+      tag: 'Full-Stack E-Commerce Platform',
       stack: 'React 19, Vite, Express, MongoDB, Tailwind CSS',
       points: [
         'Built customer auth (JWT in HTTP-only cookies, protected and public routes via React context) and profile management with shipping address and image upload (Multer, 2 MB limit).',

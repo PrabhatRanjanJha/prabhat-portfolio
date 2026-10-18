@@ -13,7 +13,7 @@ export const about = {
   title: 'About',
   paragraphs: [
     "I'm a second-year CS student at Scaler School of Technology in Bengaluru, doing IIT Madras's BS in Data Science and Applications alongside it.",
-    "I build automation systems in n8n and web apps in React. Right now I'm a Web Dev TA at Scaler, working one-on-one with first-years on HTML, CSS, JavaScript, React, and databases. Explaining things to someone who's stuck keeps me honest about what I actually understand.",
+    "I build automation systems in n8n and web apps on the MERN. Right now I'm a Web Dev TA at Scaler, working one-on-one with first-years on HTML, CSS, JavaScript, React, and databases. Explaining things to someone who's stuck keeps me honest about what I actually understand.",
     'I try problems myself before looking for hints, and I want to know why something works, not just that it does.',
   ],
   facts: [
@@ -115,7 +115,6 @@ export const projects = [
     id: 'ripple',
     name: 'Ripple',
     line: 'A project planner that finds the critical path and simulates delays without touching the real plan.',
-    status: 'In progress',
     summary:
       'You add tasks with durations and dependencies. Ripple works out the schedule and the critical path, the chain of tasks that decides your finish date. A what-if simulator shows what a slipping task does to that date.',
     highlights: [

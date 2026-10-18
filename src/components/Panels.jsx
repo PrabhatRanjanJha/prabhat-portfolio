@@ -36,7 +36,6 @@ function useResume() {
 }
 
 export function HeroPanel() {
-  const building = projects.find((p) => p.status) || projects[2]
   return (
     <div className="hero">
       <p className="hero-eyebrow hero-rise">
@@ -77,10 +76,6 @@ export function HeroPanel() {
           Say hello
         </button>
       </div>
-      <p className="hero-now hero-rise">
-        <span className="dot" aria-hidden="true" />
-        Now building: {building.name}
-      </p>
       <p className="hint">Scroll to run the workflow</p>
     </div>
   )
