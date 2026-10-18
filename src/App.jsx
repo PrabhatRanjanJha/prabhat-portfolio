@@ -2,6 +2,7 @@ import { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react
 import Desktop from './components/Desktop.jsx'
 import Flat from './components/Flat.jsx'
 import Palette from './components/Palette.jsx'
+import SoundToggle from './components/SoundToggle.jsx'
 import { CHAPTERS } from './scene/config.js'
 import { webglAvailable } from './scene/World.js'
 import { jumpToChapter } from './scroll.js'
@@ -66,6 +67,7 @@ export default function App() {
         Jump to <kbd>Ctrl K</kbd>
       </button>
       <Palette open={paletteOpen} onClose={() => setPaletteOpen(false)} items={items} />
+      <SoundToggle />
 
       {projectId && (
         <Suspense fallback={null}>

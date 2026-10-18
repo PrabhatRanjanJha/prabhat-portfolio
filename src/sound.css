@@ -1,0 +1,70 @@
+/* background music button, bottom-right corner */
+.sound-btn {
+  position: fixed;
+  z-index: 30;
+  right: 20px;
+  bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  background: rgba(14, 10, 28, 0.62);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 13px 7px 11px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: color 0.25s, border-color 0.25s, background 0.25s;
+}
+.sound-btn:hover {
+  color: var(--ink);
+  border-color: var(--faint);
+}
+.sound-btn.is-on {
+  color: var(--amber);
+  border-color: rgba(242, 184, 75, 0.55);
+}
+.sound-ico {
+  display: inline-flex;
+}
+.sound-bars {
+  display: none;
+  align-items: flex-end;
+  gap: 2px;
+  height: 12px;
+}
+.sound-btn.is-on .sound-bars {
+  display: inline-flex;
+}
+.sound-bars i {
+  width: 2px;
+  height: 100%;
+  background: currentColor;
+  border-radius: 1px;
+  transform-origin: bottom;
+  animation: sound-bar 1.4s ease-in-out infinite;
+}
+.sound-bars i:nth-child(2) {
+  animation-delay: -0.5s;
+}
+.sound-bars i:nth-child(3) {
+  animation-delay: -0.9s;
+}
+@keyframes sound-bar {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sound-bars i {
+    animation: none;
+    transform: scaleY(0.6);
+  }
+}
+@media (max-width: 820px) {
+  .sound-btn {
+    right: 14px;
+    bottom: 14px;
+  }
+}
