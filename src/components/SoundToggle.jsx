@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import '../sound.css'
 
 const BASE = import.meta.env.BASE_URL || '/'
-const VOLUME = 0.35 // quiet, behind everything
+const VOLUME = 0.65 // audible while staying in the background
 const FADE_MS = 1600
 const KEY = 'sound'
 
